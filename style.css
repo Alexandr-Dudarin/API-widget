@@ -1,31 +1,33 @@
 body {
     background-color: rgb(190, 197, 203);
+
     color: #151B3B
 }
 
-    h1 {
-        font-size: 2em; 
-        margin: 30px;
-    }
+h1 {
+    font-size: 3em;
+    margin: 30px 30px 30px 0px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+
+#output {
+    color: rgb(122, 32, 32);
+    font-size: 22px
+}
 
 
 .content {
     display: flex;
     align-items: flex-start;
-    /* по верху, можно изменить по необходимости */
     justify-content: space-between;
-    /* чтобы разделить пространство */
 }
 
-/* чтобы текст был слева */
 .text {
     flex: 1;
-    /* занимает всю доступную ширину */
     margin-right: 20px;
-    /* отступ между текстом и картинками */
 }
 
-/* картинки справа */
 .imgContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,39 +38,33 @@ body {
     width: 8vw;
     height: 8vh;
     max-width: 200px;
-    /* ограничиваем размер изображений */
     height: auto;
 }
 
 
-/* Адаптивные стили для устройств с шириной менее 600px */
 @media (max-width: 600px) {
-    /* Уменьшаем отступы у h1 для маленьких экранов */
+
     h1 {
-        margin: 12px;
-        font-size: 1.5em;
+        margin: 12px 12px 12px 0px;
+        font-size: 2em;
     }
 
-    /* Вертикальная ориентация блока Контента */
     .content {
         flex-direction: column;
         align-items: center;
-        margin: 0 10px; /* небольшой отступ по бокам */
+        margin: 0 10px;
     }
 
-    /* Текст занимает всю ширину с отступами */
     .text {
         margin: 0 10px 20px 10px;
         width: 100%;
     }
 
-    /* Сетка изображений становится одной колонкой */
     .imgContainer {
         grid-template-columns: 1fr;
         width: 100%;
     }
 
-    /* Размер изображений уменьшаем для маленьких экранов */
     .imgContainer img {
         max-width: 100px;
         height: auto;
@@ -76,8 +72,15 @@ body {
 }
 
 
-@media (max-width: 400px), (max-height: 400px) {
+@media (max-width: 400px),
+(max-height: 400px) {
     h1 {
-        margin: 8px;
+        margin: 8px 8px 8px 0px;
     }
+}
+
+.alumni-sans-pinstripe-regular {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

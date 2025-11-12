@@ -15,3 +15,17 @@ window.onload = function () {
   context.strokeStyle = lg;
   context.strokeRect(350, 50, 100, 100);
 };
+
+
+function askFriendName() {
+    const friendName = prompt("Здравствуйте, как вас зовут?:");
+    const outputDiv = document.getElementById('output'); 
+
+    if (friendName !== null && friendName.trim() !== "") {
+        outputDiv.textContent = "Приятно познакомиться, " + friendName + "!";
+    } else {
+        outputDiv.textContent = "Вы не ввели имя.";
+    }
+}
+
+setTimeout(askFriendName, 10000);

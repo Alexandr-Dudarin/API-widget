@@ -1,12 +1,20 @@
 body {
     background-color: rgb(190, 197, 203);
+    
     color: #151B3B
 }
 
     h1 {
-        font-size: 2em; 
-        margin: 30px;
+        font-size: 3em; 
+        margin: 30px 30px 30px 0px;
+         font-family: "Alumni Sans Pinstripe", sans-serif;
     }
+
+
+#output {
+    color: rgb(122, 32, 32);
+    font-size: 22px
+}
 
 
 .content {
@@ -45,8 +53,8 @@ body {
 @media (max-width: 600px) {
     /* Уменьшаем отступы у h1 для маленьких экранов */
     h1 {
-        margin: 12px;
-        font-size: 1.5em;
+         margin: 12px 12px 12px 0px;
+        font-size: 2em;
     }
 
     /* Вертикальная ориентация блока Контента */
@@ -78,6 +86,6 @@ body {
 
 @media (max-width: 400px), (max-height: 400px) {
     h1 {
-        margin: 8px;
+         margin: 8px 8px 8px 0px;
     }
 }
